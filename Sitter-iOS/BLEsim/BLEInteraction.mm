@@ -36,10 +36,18 @@
 #include <map>
 
 // Smart Office application listens for this ID
-static NSString *BEACON_UUID = @"B9407F30-F5F8-466E-AFF9-25556B57FE6D";
-static NSString *BEACON_REGION_ID = @"com.solstice.SmartOffice.SOBeaconManager";
+static NSString *BEACON_UUID = @"B9407F30-F5F8-466E-AFF9-25556B57FE6F";
+static NSString *BEACON_REGION_ID = @"BabySaver";
+
+// For Raspberry Pi
+//static NSString *SERVICE_UUID = @"3B1CEB1B-59E8-4E1B-837E-D47CEDE4B230";
+//static NSString *EMAIL_CHARACTERISTIC_UUID = @"C29D8BFE-DD80-4D53-806B-8F8B18D79362";
+
+// For Baby Bottom
 static NSString *SERVICE_UUID = @"3B1CEB1B-59E8-4E1B-837E-D47CEDE4B230";
 static NSString *EMAIL_CHARACTERISTIC_UUID = @"C29D8BFE-DD80-4D53-806B-8F8B18D79362";
+
+
 static const NSUInteger smartDisplayMajorRegionID = 99;
 static const NSUInteger smartDisplayMinorRegionID = 1;
 
@@ -86,6 +94,8 @@ static const NSUInteger smartDisplayMinorRegionID = 1;
         [self scanForPeripherals];
         
         _defaultPower = @-59;
+        
+        //[self initRegion];
     }
     return self;
 }
@@ -94,6 +104,8 @@ static const NSUInteger smartDisplayMinorRegionID = 1;
  * Advertise this beacon for connections
  */
 - (void)startAdvertising {
+    
+    //return;
     
     // Create a dictionary of advertisement data.
     NSDictionary *beaconPeripheralData = [self.beaconRegion peripheralDataWithMeasuredPower:self.defaultPower];
@@ -127,7 +139,7 @@ static const NSUInteger smartDisplayMinorRegionID = 1;
  * Check the peripheral for broadcasting services of a desired UUID
  */
 - (void)scanForServices {
-//    [self.peripheral discoverServices:@[[CBUUID UUIDWithString:SERVICE_UUID]]];
+    [self.peripheral discoverServices:@[[CBUUID UUIDWithString:SERVICE_UUID]]];
 }
 
 #pragma mark - Central Manager Delegate
@@ -246,5 +258,47 @@ static const NSUInteger smartDisplayMinorRegionID = 1;
                     forDevice:peripheral.identifier];
     }
 }
+
+- (void)initRegion
+{
+   // NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:BEACON_UUID];
+    //self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:BEACON_REGION_ID];
+    [self.locationManager startMonitoringForRegion:_beaconRegion];
+    [self.locationManager startRangingBeaconsInRegion:_beaconRegion];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
+{
+    [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
+}
+
+-(void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
+{
+    [self.locationManager stopRangingBeaconsInRegion:self.beaconRegion];
+}
+
+-(void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
+{
+    CLBeacon *beacon = [[CLBeacon alloc] init];
+    beacon = [beacons lastObject];
+    
+    if (beacon.proximity == CLProximityUnknown) {
+       //self.distanceLabel.text = @"Unknown Proximity";
+    } else if (beacon.proximity == CLProximityImmediate)
+    {
+        //self.distanceLabel.text = @"Immediate";
+        
+        // Switch to a CB peripheral - start advertising to central manager
+        self.peripheralManager = [[CBPeripheralManager alloc]initWithDelegate:self queue:nil];
+        [self startAdvertising];
+    }
+    else if (beacon.proximity == CLProximityNear) {
+       // self.distanceLabel.text = @"Near";
+    } else if (beacon.proximity == CLProximityFar) {
+        //self.distanceLabel.text = @"Far";
+    }
+    //self.rssiLabel.text = [NSString stringWithFormat:@"%li", (long)beacon.rssi];
+}
+
 
 @end

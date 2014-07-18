@@ -52,4 +52,8 @@ peripheralDidReceiveUsername:(NSString *)username
 - (id)initWithDelegate:(id<BLEInteractionDelegate>)delegate;
 -(void)startAdvertising;
 
+@property (strong, nonatomic) CLLocationManager *locationManager;
+
+
+
 @end
