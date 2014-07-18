@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sitterbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Fru-AH-EXZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="widerbackground" translatesAutoresizingMaskIntoConstraints="NO" id="oKp-lm-70H">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                                    <rect key="frame" x="-65" y="0.0" width="450" height="640"/>
                                 </variation>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dw-Gp-uAf">
@@ -66,7 +66,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR5-d6-s41">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button" image="babyOscar">
+                                <state key="normal" title="Button" image="Emma">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -75,7 +75,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrd-dO-K5I">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button" image="babyOscar">
+                                <state key="normal" title="Button" image="francesca">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -84,37 +84,28 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jz3-Nw-RAq">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button" image="babyOscar">
+                                <state key="normal" title="Button" image="Joshua">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="130" y="340" width="160" height="160"/>
                                 </variation>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6g-hk-vtk">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solstice!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vza-L3-tkB">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                <color key="textColor" red="0.3529411764705882" green="0.0" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="48" y="77" width="95" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vza-L3-tkB">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.35294117650000001" green="0.0" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="48" y="106" width="62" height="28"/>
+                                    <rect key="frame" x="48" y="106" width="79" height="28"/>
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOl-OP-R8y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvz-Yf-Mek">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emma" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fvz-Yf-Mek">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.35294117650000001" green="0.0" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -138,13 +129,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qF-pW-g8t">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aY9-MG-2MD">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Francesca" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="aY9-MG-2MD">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.35294117650000001" green="0.0" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="11" y="23" width="49" height="24"/>
+                                            <rect key="frame" x="6" y="20" width="59" height="27"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -164,9 +155,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-qv-q1c">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFO-kk-AvP">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joshua" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sFO-kk-AvP">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.35294117650000001" green="0.0" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -187,11 +178,66 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6g-hk-vtk">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.3529411764705882" green="0.0" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="48" y="77" width="95" height="21"/>
+                                </variation>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXY-1V-ni5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="signout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="300" width="46" height="46"/>
+                                </variation>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbY-Ey-lfq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="215" width="46" height="46"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8x-Dd-7vi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="menuicon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="20" width="46" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="menuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3o-xM-qC6"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFD-ek-orT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="addachild">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="130" width="46" height="46"/>
+                                </variation>
+                            </button>
+                            <view hidden="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EC-zN-zee">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Fru-AH-EXZ"/>
+                                <exclude reference="oKp-lm-70H"/>
                                 <exclude reference="1Dw-Gp-uAf"/>
                                 <exclude reference="Jj9-kP-BdV"/>
                                 <exclude reference="zru-q7-56a"/>
@@ -201,16 +247,21 @@
                                 <exclude reference="sR5-d6-s41"/>
                                 <exclude reference="mrd-dO-K5I"/>
                                 <exclude reference="Jz3-Nw-RAq"/>
-                                <exclude reference="e6g-hk-vtk"/>
                                 <exclude reference="vza-L3-tkB"/>
                                 <exclude reference="UOl-OP-R8y"/>
                                 <exclude reference="0qF-pW-g8t"/>
                                 <exclude reference="EjN-qv-q1c"/>
+                                <exclude reference="e6g-hk-vtk"/>
+                                <exclude reference="DXY-1V-ni5"/>
+                                <exclude reference="vbY-Ey-lfq"/>
+                                <exclude reference="O8x-Dd-7vi"/>
+                                <exclude reference="wFD-ek-orT"/>
+                                <exclude reference="5EC-zN-zee"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Fru-AH-EXZ"/>
+                                <include reference="oKp-lm-70H"/>
                                 <include reference="1Dw-Gp-uAf"/>
                                 <include reference="Jj9-kP-BdV"/>
                                 <include reference="zru-q7-56a"/>
@@ -220,28 +271,38 @@
                                 <include reference="sR5-d6-s41"/>
                                 <include reference="mrd-dO-K5I"/>
                                 <include reference="Jz3-Nw-RAq"/>
-                                <include reference="e6g-hk-vtk"/>
                                 <include reference="vza-L3-tkB"/>
                                 <include reference="UOl-OP-R8y"/>
                                 <include reference="0qF-pW-g8t"/>
                                 <include reference="EjN-qv-q1c"/>
+                                <include reference="e6g-hk-vtk"/>
+                                <include reference="DXY-1V-ni5"/>
+                                <include reference="vbY-Ey-lfq"/>
+                                <include reference="O8x-Dd-7vi"/>
+                                <include reference="wFD-ek-orT"/>
+                                <include reference="5EC-zN-zee"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="addChildButton" destination="wFD-ek-orT" id="dqQ-fB-Rqb"/>
                         <outlet property="firstBubble" destination="mrd-dO-K5I" id="Qwu-Yy-1aN"/>
                         <outlet property="firstNameView" destination="0qF-pW-g8t" id="hzz-Ct-95R"/>
                         <outlet property="firstStatusView" destination="1Dw-Gp-uAf" id="CKb-rb-ocA"/>
                         <outlet property="firstWhiteView" destination="Jj9-kP-BdV" id="Vnb-h6-9gh"/>
+                        <outlet property="menuButton" destination="O8x-Dd-7vi" id="ymW-iV-AX2"/>
                         <outlet property="secondBubble" destination="sR5-d6-s41" id="lGo-6F-gs8"/>
                         <outlet property="secondNameView" destination="UOl-OP-R8y" id="6MD-zD-gFf"/>
                         <outlet property="secondStatusView" destination="zru-q7-56a" id="fOp-7T-Bpr"/>
                         <outlet property="secondWhiteView" destination="HLE-zO-D51" id="rCp-Lw-yeG"/>
-                        <outlet property="sitterBackgroundImageView" destination="Fru-AH-EXZ" id="iXU-O5-fBf"/>
+                        <outlet property="settingsButton" destination="vbY-Ey-lfq" id="TxI-Nh-akT"/>
+                        <outlet property="signOutButton" destination="DXY-1V-ni5" id="doN-Fr-nKp"/>
+                        <outlet property="sitterBackgroundImageView" destination="oKp-lm-70H" id="SR7-aU-m5D"/>
                         <outlet property="thirdBubble" destination="Jz3-Nw-RAq" id="B6M-ei-UQr"/>
                         <outlet property="thirdNameView" destination="EjN-qv-q1c" id="bBd-eb-y7v"/>
                         <outlet property="thirdStatusView" destination="V9p-Lv-tFu" id="PYW-Ft-WTE"/>
                         <outlet property="thirdWhiteView" destination="vn9-Ms-KHO" id="zy4-C8-OMb"/>
+                        <outlet property="tintedView" destination="5EC-zN-zee" id="Teu-GS-jDG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -250,7 +311,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="babyOscar" width="612" height="612"/>
-        <image name="sitterbackground" width="320" height="568"/>
+        <image name="Emma" width="660" height="660"/>
+        <image name="Joshua" width="1946" height="1946"/>
+        <image name="addachild" width="46" height="46"/>
+        <image name="francesca" width="305" height="305"/>
+        <image name="menuicon" width="46" height="46"/>
+        <image name="settings" width="46" height="46"/>
+        <image name="signout" width="46" height="46"/>
+        <image name="widerbackground" width="400" height="568"/>
     </resources>
 </document>
